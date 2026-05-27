@@ -35,4 +35,14 @@ function maxSum(arr) {
     return largest + secondLargest;
 }
 
-console.log(maxSum(array));
+// find duplicate
+
+const array3 = [1, 2, 3, 4, 2, 2];
+const set = new Set();
+let count = 0;
+for (num of array3) {
+    if (set.has(num)) {
+        console.log("duplicate found!", num)
+    }
+    set.add(num)
+}
