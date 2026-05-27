@@ -60,4 +60,21 @@ function anagram(string1, string2) {
     }
     return true;
 }
-console.log(anagram("rahulsanthosh", "santhoshrah"));
+// console.log(anagram("rahulsanthosh", "santhoshrah"));
+
+
+// remove a targeted element from an array
+function removeElement (nums, val) {
+    let k = 0;
+    for(let i=0; i<nums.length; i++) {
+        if (nums[i] !== val) {
+            nums[k] = nums[i]
+            k++;
+        }
+    }
+
+    nums.length = k;
+    return console.log(nums)
+};
+
+// removeElement([3,2,2,3, 5, 7, 2, 3, 2], 2);
