@@ -1,5 +1,4 @@
 function timeToBuy (stockPrices) {
-    let todaysProfit = 0;
     let maxProfit = 0;
     
     let minimumPrice = stockPrices[0]
@@ -7,7 +6,7 @@ function timeToBuy (stockPrices) {
         if (stockPrices[i] < minimumPrice) {
             minimumPrice = stockPrices[i]
         }
-        todaysProfit = stockPrices[i] - minimumPrice;
+        let todaysProfit = stockPrices[i] - minimumPrice;
         if (todaysProfit > maxProfit) {
             maxProfit = todaysProfit;
         }

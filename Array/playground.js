@@ -76,5 +76,16 @@ function removeElement (nums, val) {
     nums.length = k;
     return console.log(nums)
 };
-
 // removeElement([3,2,2,3, 5, 7, 2, 3, 2], 2);
+
+// remove duplicated from an array 
+
+function removeDuplicates (nums) {
+    const set = new Set();
+    for (let i= 0; i< nums.length; i++) {
+        set.add(nums[i])
+    }
+    return set;
+}
+
+console.log(removeDuplicates([1, 1, 2]))
