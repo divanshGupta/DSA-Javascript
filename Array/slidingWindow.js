@@ -3,6 +3,7 @@ function sliding(array, val) {
     let greatest = 0;
     for(let i = 0; i <= array.length - val; i++) {
         let sum = 0;
+        
         for(let j = i; j < val +i; j++) {
             sum = sum + array[j]
         }
