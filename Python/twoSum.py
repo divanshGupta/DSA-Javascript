@@ -1,6 +1,6 @@
 
 
-def two_sum(nums: list[int], target: int) -> list[int]:
+def two_sum(nums, target):
     seen = {}
 
     for index, num in enumerate(nums):
